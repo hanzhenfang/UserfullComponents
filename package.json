@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/node": "^18.11.17",
     "preset-uno@0.47.6": "link:unocss/preset-uno@0.47.6",
     "vue": "^3.2.45"
   },

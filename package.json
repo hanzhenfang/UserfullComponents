@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --port 4399",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "showdir": "ls"
   },
   "dependencies": {
     "@types/node": "^18.11.17",

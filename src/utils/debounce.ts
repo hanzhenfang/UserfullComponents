@@ -11,17 +11,18 @@ export function debounce(
   immediately: boolean = true,
 ) {
   let timerID: number = -1
-  return function () {
-    if (immediately) {
-      fn()
-      immediately = false
+  return function (this: any, ...arg: any) {
+    if (timerID < 0 && immediately) {
+      fn.apply(this, arg)
+      timerID = 1
       return
     }
     if (timerID > 0) {
       clearTimeout(timerID)
     }
     timerID = window.setTimeout(() => {
-      fn()
+      console.log("arg", arg)
+      fn.apply(this, arg)
     }, delay)
   }
 }

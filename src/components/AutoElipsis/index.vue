@@ -41,7 +41,7 @@ function autoElipsis(
     const canFitStrNumber = Math.floor(
       ((parentWidth - 10) * startElipsisLine) / avgStrWidth,
     )
-    const delEachSide = (strNumer - canFitStrNumber) / 2
+    const delEachSide = (strNumer - canFitStrNumber + 5) / 2
     const endLeft = Math.floor(strNumer / 2 - delEachSide)
     const startRight = Math.ceil(strNumer / 2 + delEachSide)
 

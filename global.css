@@ -1,3 +1,46 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+// 消除 a 标签默认样式
+a,a:link,a:visited,a:hover:a:active{
+  decoration:none,
+  color:none
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+}
+
+@supports (-webkit-touch-callout: none) {
+  html,
+  body {
+    width: 100vw;
+    height: -webkit-fill-available;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+#app {
+  width: 100vw;
+  height: 100%;
+}
+
+// 清除滚动栏
 .hide-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;

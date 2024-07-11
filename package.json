@@ -11,8 +11,9 @@
   },
   "dependencies": {
     "@types/node": "^18.11.17",
+    "@vueuse/core": "^10.11.0",
     "preset-uno@0.47.6": "link:unocss/preset-uno@0.47.6",
-    "vue": "^3.2.45"
+    "vue": "^3.4.31"
   },
   "devDependencies": {
     "@unocss/preset-uno": "^0.47.6",
